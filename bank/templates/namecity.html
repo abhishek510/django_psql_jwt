@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        {% for i in banks %}
+        Bank Name:{{i.bank.name}}<br>
+        Ifsc:{{i.ifsc}}<br>
+        Branch:{{i.branch}}<br>
+        Address:{{i.address}}<br>
+        City:{{i.city}}<br>
+        District:{{i.district}}<br>
+        State:{{i.state}}<br><br>
+        {% endfor %}
+        <br>
+        <form action="index" method="GET">
+        <button type="submit">Go Back</button>
+        </form>
+    </body>
+</html>
