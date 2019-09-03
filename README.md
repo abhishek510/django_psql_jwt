@@ -16,7 +16,7 @@ pytz==2019.2
 
 for localhost:
 get access and refresh token:
-curl -X POST -H "Content-Type: application/json" -d '{"username": "a@b.com", "password": "1234"}' http://localhost:8000/api/token/
+curl -X POST -H "Content-Type: application/json" -d '{"username": "username", "password": "password"}' http://localhost:8000/api/token/
 
 get new access token after expiration:
 curl -X POST -H "Content-Type: application/json" -d '{"refresh":"<REFRESH-TOKEN-HERE>",}' http://localhost:8000/api/token/refresh/
@@ -31,7 +31,7 @@ curl -H "Authorization: Bearer "<ACCESS-TOKEN-HERE>" " http://127.0.0.1:8000/nam
 
 deployed on heroku:
 get access and refresh token:
-curl -X POST -H "Content-Type: application/json" -d '{"username": "a@b.com", "password": "1234"}' http://appassignment.herokuapp.com/api/token/
+curl -X POST -H "Content-Type: application/json" -d '{"username": "username", "password": "password"}' http://appassignment.herokuapp.com/api/token/
 
 get new access token after expiration:
 curl -X POST -H "Content-Type: application/json" -d '{"refresh":"<REFRESH-TOKEN-HERE>",}' http://appassignment.herokuapp.com/api/token/refresh/
