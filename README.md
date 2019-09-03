@@ -4,6 +4,16 @@ Database used Postgresql
 Api to search in that data for specific authenticated users 
 All API calls authenticated by JWT Tokens
 
+Requirements:
+Django==2.2.4
+django-jwt-auth==0.0.2
+djangorestframework==3.10.2
+djangorestframework-simplejwt==4.3.0
+psycopg2==2.8.3
+PyJWT==1.7.1
+pytz==2019.2
+
+
 for localhost:
 get access and refresh token:
 curl -X POST -H "Content-Type: application/json" -d '{"username": "a@b.com", "password": "1234"}' http://localhost:8000/api/token/
